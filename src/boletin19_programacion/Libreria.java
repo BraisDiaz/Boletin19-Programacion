@@ -26,9 +26,11 @@ public class Libreria {
         
         for(int i=0; i<listalibros.size(); i++){
             
-            if(listalibros.get(i).getTitulo().equals(elegir));
+            if(listalibros.get(i).getTitulo().equals(elegir)){
             listalibros.get(i).setNunidades(listalibros.get(i).getNunidades()- udsavender);
-     }
+        } else
+          System.out.println("O libro introducido non está na lista");
+    }
     }
     
     public void amosarLibro(){
